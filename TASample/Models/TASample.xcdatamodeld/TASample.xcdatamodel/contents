@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDRestaurant" representedClassName="CDRestaurant" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="sortingValues" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDRestaurantSortingValues" inverseName="restaurant" inverseEntity="CDRestaurantSortingValues" syncable="YES"/>
+    </entity>
+    <entity name="CDRestaurantSortingValues" representedClassName="CDRestaurantSortingValues" syncable="YES" codeGenerationType="class">
+        <attribute name="averageProductPrice" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bestMatch" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="deliveryCosts" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="distance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="minCost" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="newest" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="popularity" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ratingAverage" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="restaurant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDRestaurant" inverseName="sortingValues" inverseEntity="CDRestaurant" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDRestaurant" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="CDRestaurantSortingValues" positionX="284.90234375" positionY="-127.10546875" width="128" height="178"/>
+    </elements>
+</model>
